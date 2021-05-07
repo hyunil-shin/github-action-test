@@ -42,6 +42,7 @@ jobs:
           fallocate -l 5000M file2.out
           echo test, and deploy your project.
           ls -al
+          df -h
           du -hs
           
       - name: create3
