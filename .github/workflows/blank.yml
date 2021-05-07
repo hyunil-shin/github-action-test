@@ -35,3 +35,4 @@ jobs:
           fallocate -l 10000M file.out
           echo test, and deploy your project.
           ls -al
+          du -hs
