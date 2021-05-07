@@ -45,8 +45,17 @@ jobs:
           du -hs
           
       - name: create3
-        run: fallocate -l 15000M file1.out
-        
+        run: fallocate -l 3000M file1.out
+     
+      - name: create4
+        run: fallocate -l 2000M file1.out
+    
+      - name: create5
+        run: fallocate -l 1000M file1.out
+    
+      - name: create6
+        run: fallocate -l 1000M file1.out
+    
       - name: close
         run: |
           ls -al
