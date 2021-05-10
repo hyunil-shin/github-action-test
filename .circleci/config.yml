@@ -12,7 +12,7 @@ jobs:
           name: Check Scripts
           command: |
             df -h
-            fallocate -l 30000M file1.out            
+            fallocate -l 49000M file1.out            
             ls -al
             fallocate -l 3000M file4.out
             fallocate -l 2000M file5.out
