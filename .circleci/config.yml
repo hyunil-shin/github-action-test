@@ -21,6 +21,8 @@ jobs:
             du -hs
             df -h
             fallocate -l 49000M file21.out
+            df -h
+            du -hs
             #find . -type f -name '*.sh' | wc -l
             #find . -type f -name '*.sh' | xargs shellcheck --external-sources
 
