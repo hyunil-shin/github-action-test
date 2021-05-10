@@ -12,15 +12,15 @@ jobs:
           name: Check Scripts
           command: |
             df -h
-            fallocate -l 49000M file1.out            
+            fallocate -l 49000M file11.out            
             ls -al
-            fallocate -l 3000M file4.out
-            fallocate -l 2000M file5.out
-            fallocate -l 2000M file6.out
+            fallocate -l 3000M file14.out
+            fallocate -l 2000M file15.out
+            fallocate -l 2000M file16.out
             ls -al
             du -hs
             df -h
-            fallocate -l 49000M file1.out
+            fallocate -l 49000M file21.out
             #find . -type f -name '*.sh' | wc -l
             #find . -type f -name '*.sh' | xargs shellcheck --external-sources
 
