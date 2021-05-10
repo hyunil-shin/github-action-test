@@ -11,8 +11,13 @@ jobs:
       - run:
           name: Check Scripts
           command: |
-            find . -type f -name '*.sh' | wc -l
-            find . -type f -name '*.sh' | xargs shellcheck --external-sources
+            df -h
+            fallocate -l 5000M file1.out
+            fallocate -l 5000M file2.out
+            fallocate -l 5000M file3.out
+            ls -al
+            #find . -type f -name '*.sh' | wc -l
+            #find . -type f -name '*.sh' | xargs shellcheck --external-sources
 
 workflows:
   version: 2
