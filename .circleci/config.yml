@@ -19,6 +19,8 @@ jobs:
             fallocate -l 2000M file6.out
             ls -al
             du -hs
+            df -h
+            fallocate -l 49000M file1.out
             #find . -type f -name '*.sh' | wc -l
             #find . -type f -name '*.sh' | xargs shellcheck --external-sources
 
